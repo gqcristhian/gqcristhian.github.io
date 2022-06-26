@@ -78,6 +78,56 @@ for (i = 0; i < acc.length; i++) {
     padding-left: 0.7em;
     padding-right: 0.3em;
 }
+.deg_btn {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0 30px;
+    font-size: 19px;
+    height: 40px;
+    line-height: 40px!;
+    vertical-align: middle;
+    background: #51587b;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    transition: .4s;
+}
+
+.deg_btn:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    border: none;
+    border-left: solid 21px white;
+    border-bottom: solid 41px transparent;
+    z-index: 1;
+    transition: .4s;
+}
+
+.deg_btn:after {
+    position: absolute;
+    content: '';
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    border: none;
+    border-left: solid 21px transparent;
+    border-bottom: solid 41px white;
+    z-index: 1;
+    transition: .4s;
+}
+
+.deg_btn:hover:before, .deg_btn:hover:after{
+    border-left-width: 25px;
+}
+
+.deg_btn:hover{
+    background: #2c3148;
+}
 /*.....................................................................................*/
 .cdp{text-align:left!important;margin: 1.5em 0;}
 .cdp code {
@@ -272,12 +322,10 @@ NASA, ESA, J. Dalcanton (University of Washington, USA), B. F. Williams
 Washington, USA), the PHAT team, and R. Gendler.</p> -->
 
 <ul>
-  <li><a class="active" 
-href="https://personal.utdallas.edu/~gqcristhian">Home</a></li>
+  <li><a class="active" href="https://personal.utdallas.edu/~gqcristhian">Home</a></li>
   <li><a href="#news">Biography</a></li>
   <li><a href="#contact">Research</a></li>
-  <li><a 
-href="https://personal.utdallas.edu/~gqcristhian/publications">Publications</a></li>
+  <li><a href="https://personal.utdallas.edu/~gqcristhian/publications">Publications</a></li>
   <li><a href="#about">Codes and links</a></li>
   <li><a href="#about">Contact</a></li>
 </ul>
@@ -300,6 +348,80 @@ models.</p>
 <!-- ######################## Right hand side column start 
 ########################### -->
 <div class="main">
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%% SECTION-I %%%%%%%%%%%%%%%%%%%%%%%%% -->
+<h2>Latest Publications</h2>
+<!-- 
+################################################################################# 
+-->
+<a href="#" style="font-size:100%;" class="deg_btn openBtn" 
+ontouchstart=""><i class="fa fa-caret-right"></i> Current constraints on 
+deviations from General Relativity using binning in redshift and scale. 
+(2020)
+</a>
+<div class="cdp">
+    <div class="w3-half">
+    <img 
+src="https://drive.google.com/uc?export=view&id=1-TDWcMXLS9YSLe2wBsBTjOjgI_Um--xA" 
+style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
+    </div>
+    <p>Source: <a 
+href="https://iopscience.iop.org/article/10.1088/1475-7516/2020/12/018"> 
+Cristhian Garcia-Quintero et al JCAP 12 (2020) 018</a> <a href="https://arxiv.org/abs/2010.12519"> [arXiv:2010.12519]</a> 
+	</p>    
+</div>
+<br>
+<br>
+	<!-- 
+################################################################################# 
+-->
+<a href="#" style="font-size:100%;" class="deg_btn openBtn" 
+ontouchstart=""><i class="fa fa-caret-right"></i> Cosmological 
+discordances. III. More on measure properties, large-scale-structure 
+constraints, the Hubble constant and Planck data. (2019)
+</a>
+<div class="cdp">
+    <div class="w3-half">
+    <img 
+src="https://drive.google.com/uc?export=view&id=1VqAYo3m4y2nEKXud6-jQvYf1e-Wzp5_a" 
+style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
+    </div>
+    <p>Source: <a 
+href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.100.123538">Cristhian 
+Garcia-Quintero et al., Phys.Rev.D 100 (2019) 12, 123538</a> <a href="https://arxiv.org/abs/1910.01608"> [arXiv:1910.01608]</a> 
+	</p>   
+</div>
+<br>
+<br>
+	<!-- 
+################################################################################# 
+-->
+<a href="#" style="font-size:100%;" class="deg_btn openBtn" 
+ontouchstart=""><i class="fa fa-caret-right"></i> Testing deviations 
+from GR at cosmological scales including dynamical dark energy, massive 
+neutrinos, functional or binned parametrizations, and spatial curvature. 
+(2019)
+</a>
+<div class="cdp">
+    <div class="w3-half">
+    <img 
+src="https://drive.google.com/uc?export=view&id=1hPtS0HJ5HVIkk0x5H5tzqOqk7TG_Gds8" 
+style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
+    </div>
+    <p>Source: <a 
+href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.100.103530">Cristhian 
+Garcia-Quintero et al., Phys.Rev.D 100 (2019) 10, 103530</a> <a href="https://arxiv.org/abs/1908.00290"> [arXiv:1908.00290]</a> 
+	</p>
+</div>
+<br>
+<br>
+	<!-- 
+################################################################################# 
+-->
+<h2>Full list</h2>
+<p>A full list of my works can be found in <a 
+href="https://inspirehep.net/authors/1755058?ui-citation-summary=true">InspireHEP</a>.
+</p>
 <!-- ######################## Right hand side column end 
 ########################### -->
 </div>
