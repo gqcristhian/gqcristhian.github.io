@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Home</title>
+<title>Page Title</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -171,7 +171,7 @@ li a:hover:not(.active) {
 }
 
 .active {
-  background-color: #4CAF50;
+  background-color: #104E8B;
 }
 
 .navbar a {
@@ -207,7 +207,7 @@ li a:hover:not(.active) {
 .side {
   -ms-flex: 30%; /* IE10 */
   flex: 30%;
-  background-color: #4CAF50;
+  background-color: #104E8B;
   padding: 20px;
 }
 
@@ -215,16 +215,10 @@ li a:hover:not(.active) {
 .main {   
   -ms-flex: 70%; /* IE10 */
   flex: 70%;
-  background-color: white;
+  background-color: #1C1C1C;
   padding: 20px;
 }
 
-/* Fake image, just for this example */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
-}
 
 /* Footer */
 .footer {
@@ -250,6 +244,22 @@ other */
     width: 100%;
   }
 }
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 0.0px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 </style>
 <script> jQuery(function(){ jQuery(".openBtn").click(function(){ 
 jQuery($(this).next(".cdp")).animate( {height: "toggle", opacity: 
@@ -257,44 +267,39 @@ jQuery($(this).next(".cdp")).animate( {height: "toggle", opacity:
 </head>
 <body>
 
-<div class="header-img">
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<p style="font-size:70%;color:white;background-color:black;">Sharpest 
-ever view of the Andromeda Galaxy (Released in 2015). Credit:
-NASA, ESA, J. Dalcanton (University of Washington, USA), B. F. Williams 
-(University of Washington, USA), L. C. Johnson (University of 
-Washington, USA), the PHAT team, and R. Gendler.</p>
-
-</div>
-<!--Credit:
-NASA, ESA, J. Dalcanton (University of Washington, USA), B. F. Williams 
-(University of Washington, USA), L. C. Johnson (University of 
-Washington, USA), the PHAT team, and R. Gendler.</p> -->
+<header>
+    <div class="row">
+         <div class="column">        
+             <img class="column" src="https://scitechdaily.com/images/Mayall-Telescope-Kitt-Peak-National-Observatory.jpg" style="width:100%">
+         </div>
+         <div class="column">        
+             <img class="column" src="https://scitechdaily.com/images/Mayall-Telescope-Kitt-Peak-National-Observatory.jpg" style="width:100%">
+         </div>
+         <div class="column">        
+             <img class="column" src="https://scitechdaily.com/images/Mayall-Telescope-Kitt-Peak-National-Observatory.jpg" style="width:100%">
+         </div>
+    </div>
+</header>
 
 <ul>
   <li><a class="active" 
-href="https://gqcristhian.github.io">Home</a></li>
+href="https://personal.utdallas.edu/~gqcristhian">Home</a></li>
   <li><a href="#news">Biography</a></li>
   <li><a href="#contact">Research</a></li>
   <li><a 
-href="https://gqcristhian.github.io/publications">Publications</a></li>
+href="https://personal.utdallas.edu/~gqcristhian/publications">Publications</a></li>
   <li><a href="#about">Codes and links</a></li>
   <li><a href="#about">Contact</a></li>
 </ul>
 
 <div class="row">
   <div class="side">
-    <h2>Cristhian Garcia-Quintero</h2>
-    <h5>Physics PhD student at University of Texas at Dallas</h5>
+    <h2 style="color:white">Cristhian Garcia-Quintero</h2>
+    <h5 style="color:white">Physics PhD candidate at University of Texas at Dallas</h5>
     <img 
 src="https://drive.google.com/uc?export=view&id=1ykCdZsomomEasteAVP0hgSqFYkfvzSww" 
 style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">    
-<p>I am a Mexican PhD student at UT Dallas working in cosmology. We are 
-interested in testing GR searching for modifications to gravity at large 
-scales. Following this aspect, I am one of the current developers of the 
-ISiTGR code. Additionally, we are interested in quantifying the 
-inconsistency/consistency between cosmological data-sets and dark energy 
-models.</p>
+<p style="color:white">Hello, I am a Mexican PhD student at UT Dallas. I work with my advisor Dr. Mustapha Ishak and others in the cosmology and astrophysics group.</p>
   </div>
   
 <!-- ######################## Right hand side column start 
