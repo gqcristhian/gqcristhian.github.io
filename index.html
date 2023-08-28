@@ -588,11 +588,12 @@
                           <div class="project-item-icon-box">
                             <ion-icon name="eye-outline"></ion-icon>
                           </div>
-
-                          <img src="./images/isitgr.png" alt="finance" onclick="enlargeImg()" loading="lazy">
+                          <div class="project-img">
+                          <img src="./images/isitgr.png" alt="Image">
+                          </div>
                         </figure>
                         
-                        <h2 class="project-title">Integrated Software in Testing General Relativity (ISiTGR)</h2>
+                        <h2 class="project-title" style="font-size:120%;font-weight: bold">Integrated Software in Testing General Relativity (ISiTGR)</h2>
                         <br>
                         <p class="project-category">The ISiTGR code is a publicly available package for testing general
                           relativity using phenomenological modified gravity parameters. The package includes several modifications
@@ -617,10 +618,10 @@
                             <ion-icon name="eye-outline"></ion-icon>
                           </div>
 
-                          <img src="./images/bao_fitter.png" alt="finance" loading="lazy">
+                          <img src="./images/bao_fitter.png">
                         </figure>
 
-                        <h2 class="project-title">BAO-Fitter</h2>
+                        <h2 class="project-title" style="font-size:120%;font-weight: bold">BAO-Fitter</h2>
                         <br>
                         <p class="project-category">The BAO-Fitter code was a package developed by me that relies on the old nbodykit
                           and emcee to perform modelling of the BAO feature and BAO parameter constraints in Fourier space.
@@ -673,24 +674,6 @@
 
 
 
-  <!-- script to set display property -->
-  <script>
-    // Get the img object using its Id
-    img = document.getElementById("img1");
-    // Function to increase image size
-    function enlargeImg() {
-        // Set image size to 1.5 times original
-        img.style.transform = "scale(1.5)";
-        // Animation effect
-        img.style.transition = "transform 0.25s ease";
-    }
-    // Function to reset image size
-    function resetImg() {
-        // Set image size to original
-        img.style.transform = "scale(1)";
-        img.style.transition = "transform 0.25s ease";
-    }
-  </script>
   <!--
     - custom js link
   -->

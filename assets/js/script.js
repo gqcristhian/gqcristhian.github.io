@@ -157,3 +157,19 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+  const imageContainers = document.querySelectorAll('.project-img');
+  
+  imageContainers.forEach(container => {
+    container.addEventListener('click', function() {
+      const img = container.querySelector('img');
+      openImageView(img.src);
+    });
+  });
+  
+  function openImageView(imageSrc) {
+    // Create a new window or use a lightbox library to display the image in view mode
+    window.open(imageSrc, '_blank');
+  }
+});
