@@ -930,11 +930,11 @@ main {
   border-radius: 8px;
 }
 
-.select-item button:hover { --eerie-black-2: hsl(240, 2%, 20%); }
+.select-item button:hover { --eerie-black-2: hsl(40, 2%, 20%); }
 
 .project-list {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: auto auto;
   gap: 30px;
   margin-bottom: 10px;
 }
@@ -1744,7 +1744,7 @@ textarea.form-input::-webkit-resizer { display: none; }
    * PORTFOLIO
    */
 
-  .project-list { grid-template-columns: repeat(3, 1fr); }
+  .project-list { grid-template-columns: repeat(2, 1fr); }
 
 
 

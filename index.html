@@ -545,9 +545,8 @@
                 </header>
 
                 <section class="projects">
-
+                  <!--
                   <ul class="filter-list">
-
                     <li class="filter-item">
                       <button data-filter-btn>ISiTGR</button>
                     </li>
@@ -555,8 +554,8 @@
                     <li class="filter-item">
                       <button data-filter-btn>BAO Fitter</button>
                     </li>
-
                   </ul>
+                  -->
 
                   <div class="filter-select-box">
 
@@ -564,12 +563,8 @@
 
                       <div class="select-value" data-selecct-value>Select category</div>
 
-                      <div class="select-icon">
-                        <ion-icon name="chevron-down"></ion-icon>
-                      </div>
-
                     </button>
-
+                    <!--
                     <ul class="select-list">
 
                       <li class="select-item">
@@ -579,7 +574,7 @@
                       <li class="select-item">
                         <button data-select-item>BAO Fitter</button>
                       </li>
-
+                    -->
                     </ul>
 
                   </div>
@@ -594,11 +589,11 @@
                             <ion-icon name="eye-outline"></ion-icon>
                           </div>
 
-                          <img src="./images/isitgr.png" alt="finance" loading="lazy">
+                          <img src="./images/isitgr.png" alt="finance" onclick="enlargeImg()" loading="lazy">
                         </figure>
-
-                        <h3 class="project-title">Integrated Software in Testing General Relativity (ISiTGR)</h3>
-
+                        
+                        <h2 class="project-title">Integrated Software in Testing General Relativity (ISiTGR)</h2>
+                        <br>
                         <p class="project-category">The ISiTGR code is a publicly available package for testing general
                           relativity using phenomenological modified gravity parameters. The package includes several modifications
                           to CAMB to include modified gravity parameters. The code can assume a either functional form or use binning
@@ -609,7 +604,8 @@
                           for deviations from general relativity, such as CCL and desilike, and CosmoSIS (under request).
                           ISiTGR was a code initially developed by Dr. Mustapha Ishak and Dr. Jason Dossett, and later on I had the oportunity to continue its development.  
                         </p>
-
+                        <br>
+                        <p> <a href="https://github.com/mishakb/ISiTGR">ISiTGR repo</a> </p>
                       </a>
                     </li>
 
@@ -624,15 +620,16 @@
                           <img src="./images/bao_fitter.png" alt="finance" loading="lazy">
                         </figure>
 
-                        <h3 class="project-title">BAO-Fitter</h3>
-
+                        <h2 class="project-title">BAO-Fitter</h2>
+                        <br>
                         <p class="project-category">The BAO-Fitter code was a package developed by me that relies on the old nbodykit
                           and emcee to perform modelling of the BAO feature and BAO parameter constraints in Fourier space.
                           <br><br>
                           I used BAO-Fitter to test the theoretical modelling of the BAO using DESI mocks. This was part of a previous
                           mock challenge effort. 
                         </p>
-
+                        <br>
+                        <p> <a href="https://github.com/gqcristhian/BAO_Fitter">BAO-Fitter repo</a> </p>
                       </a>
                     </li>
 
@@ -676,7 +673,24 @@
 
 
 
-
+  <!-- script to set display property -->
+  <script>
+    // Get the img object using its Id
+    img = document.getElementById("img1");
+    // Function to increase image size
+    function enlargeImg() {
+        // Set image size to 1.5 times original
+        img.style.transform = "scale(1.5)";
+        // Animation effect
+        img.style.transition = "transform 0.25s ease";
+    }
+    // Function to reset image size
+    function resetImg() {
+        // Set image size to original
+        img.style.transform = "scale(1)";
+        img.style.transition = "transform 0.25s ease";
+    }
+  </script>
   <!--
     - custom js link
   -->
