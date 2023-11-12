@@ -8,7 +8,30 @@
   <title>Cristhian Garcia-Quintero</title>
   <meta name="author" content="Cristhian Garcia Quintero">
   <meta name="description" content="Cristhian, Garcia, Quintero, Garcia-Quintero, Cristhian Garcia-Quintero, physics, cosmology, astrophysics">
+  <style>
+.image-container {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+}
 
+.image-container figure {
+    text-align: center;
+    margin-right: 20px; /* Adjust the margin as needed for space between figures */
+    max-width: 50%; /* Set a maximum width for the figures */
+}
+
+.image-container img {
+    width: 100%; /* Make the images fill the available width within the figure */
+    height: auto; /* Maintain the aspect ratio */
+    display: block;
+    margin: 0 auto; /* Center the images within the flex container */
+}
+
+.image-container figcaption {
+    color: white; /* Set the font color to white */
+    margin-top: 10px; /* Adjust the margin as needed */
+}
+    </style>
   <!--
     - favicon
   -->
@@ -170,6 +193,20 @@
             Additionally, I am involved with cross-correlating DESI with photometric surveys to perform 3x2-pt analysis. 
             <br><br>
           </p></font>  
+
+          <br>
+          
+          <div class="image-container">
+            <figure>
+              <img src="./images/TACOS3.png" alt="Dark Energy" style="width:100%">
+              <figcaption>Presentation at the 2nd Theoretical Astroparticle and Cosmology Symposium in Texas</figcaption>
+            </figure>
+            <figure>
+              <img src="./images/ConfPhoto.jpg" alt="Dark Energy" style="width:100%">
+              <figcaption>Summer DESI collaboration meeting at UK</figcaption>
+            </figure>
+          </div> 
+
         </section>
 
 
@@ -663,6 +700,11 @@
           </p>
         </section>
 
+        <img src="./images/outreach2.jpg" alt="Dark Energy" style="width:70%" loading="lazy">
+        <br>
+        <img src="./images/outreach3.jpg" alt="Dark Energy" style="width:70%" loading="lazy">
+        <br>
+        <img src="./images/outreach4.jpg" alt="Dark Energy" style="width:70%" loading="lazy">
 
       </article>
 
@@ -670,17 +712,21 @@
 
   </main>
 
+
+
   <!--
   Google analytics
   -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NQM5WGW0QW"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+
+ <script async src="https://www.googletagmanager.com/gtag/js?id=G-NQM5WGW0QW"></script>
+ <script>
+   window.dataLayer = window.dataLayer || [];
+   function gtag(){dataLayer.push(arguments);}
+   gtag('js', new Date());
  
-    gtag('config', 'G-NQM5WGW0QW');
-  </script>
+   gtag('config', 'G-NQM5WGW0QW');
+ </script>
+
 
   <!--
     - custom js link
