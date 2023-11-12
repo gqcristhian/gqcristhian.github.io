@@ -25,12 +25,12 @@
 
   --bg-gradient-onyx: linear-gradient(
     to bottom right,
-    hsl(240, 1%, 25%) 3%,
+    hsl(0, 0%, 19%) 3%,
     hsl(0, 0%, 19%) 97%
   );
   --bg-gradient-jet: linear-gradient(
     to bottom right,
-    hsla(240, 1%, 18%, 0.251) 0%,
+    hsla(240, 18%, 75%, 0.251) 0%,
     hsla(240, 2%, 11%, 0) 100%
   ), hsl(240, 2%, 13%);
   --bg-gradient-yellow-1: linear-gradient(
@@ -56,10 +56,10 @@
 
   /* solid */
 
-  --jet: hsl(0, 0%, 22%);
+  --jet: hsl(127, 63%, 34%);
   --onyx: hsl(240, 1%, 17%);
-  --eerie-black-1: hsl(240, 2%, 13%);
-  --eerie-black-2: hsl(240, 2%, 12%);
+  --eerie-black-1: hsl(127, 63%, 34%);
+  --eerie-black-2: hsl(240, 25%, 11%);
   --smoky-black: hsl(0, 0%, 7%);
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
@@ -155,10 +155,13 @@ input, textarea {
 
 html { font-family: var(--ff-poppins); }
 
-body { background: var(--smoky-black); }
-
-
-
+body {
+  background-image: url('../../images/jwst2.png');
+  background-size: cover; /* Adjust as needed */
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Optional: Fixed background */
+  background-color: var(--smoky-black); /* Fallback color in case the image is not available */
+}
 
 
 /*-----------------------------------*\
@@ -1067,7 +1070,7 @@ main {
   position: absolute;
   inset: 1px;
   border-radius: inherit;
-  background: var(--eerie-black-1);
+  background: var(--bg-gradient-jet);
   z-index: -1;
 }
 
